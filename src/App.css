@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+:root{
+    --grey:#bababa;
+    --pink:rgba(199, 56, 192, 0.35);
+    --blue:rgba(84, 144, 248, 0.35)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.gradient-border1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to right, var(--pink), var(--blue)) ; /* Set the gradient colors as background */
+    border-radius: 6px; /* Make the borders rounded */
+    padding: 1px;
+    
+  
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.gradient-border2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(var(--pink), var(--blue)); /* Set the gradient colors as background */
+    border-radius: 6px; /* Make the borders rounded */
+    padding: 1px;
+    
+  
   }
-  to {
-    transform: rotate(360deg);
+
+  .text-gradient{
+    background: -webkit-linear-gradient(0deg,var(--pink), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
   }
+  .outer-card{
+    width: 90%;
+    margin: 10px 3rem;
+    padding: 10px;
+  }
+  .card{
+   
+    border-radius: 20px;
+    padding: 6px 3px ;
+   
+  }
+  .inner-card{
+    width: 100%;
+    height: 200px;
+    border-radius: 18px;
+    padding: 1em 2em ;
+    border: 4px solid white;
+  }
+.App{
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+
+.navbar{
+    width: 100%;
+    height:100px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    bottom: 0;
+    
+}
+
+a{
+    color: #FFF;
+    text-decoration: none;
+    opacity: 70%;
+}
+.active{
+
+    opacity: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.width{
+    width: 100%;
+}
+
+.top-nav{
+    padding: max(3vw,1rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.title{
+    color: #FF339C;
+}
+.top-nav-img{
+    width: 40px;
+    height: 40px;
+}
+
+input{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+}
+
+.button-type{
+    color: white;
+    padding: 0px;
+    flex-basis: 40%;
+}
+.code-bar{
+    width: 100%;
+    border-radius: 15px;
+    background-color: #FFF;
+    margin:0 3px;
+}
+
+
+.profile-section{
+    margin:10px;
+}
+.profile-list{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+
+}
+
+
+.info-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 1rem;
+}
+
+.info-outer{
+    width: 80%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+   
+    
+    padding: 1rem;
+}
+.info-inner{
+    padding: 1rem;
 }
